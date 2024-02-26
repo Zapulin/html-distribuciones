@@ -1,0 +1,654 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* responsive */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+@media only screen and (max-width:768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+
+/* html */
+body {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #07066a;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+
+h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+}
+
+p {
+    padding: 5px;
+    color: #07066a;
+    font-size: 1.15rem;
+}
+
+
+label {
+    padding: 5px;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    color: #07066a;
+}
+
+
+.icon {
+    float:left
+}
+
+span {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* nav */
+
+.header {
+    background-color: #ffffff;
+    height: 95px;
+    position: fixed;
+    z-index: 5;
+}
+
+.headfixed {
+    height: 95px;
+}
+
+.headorange {
+    background-color: #ffa500;
+    text-align: right;
+    height: auto;
+    padding: 5px;
+
+}
+
+.lang-buttom {
+    font-size: 0.7rem;
+    padding: 3px;
+}
+
+/* logo head*/
+.logo {
+    padding: 5px;
+    margin-left: 20px;
+    float:left;
+}
+
+/* menu */
+.nav {
+    padding: 18px;
+    text-align: right;
+    float:right;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+}
+
+.menu > li > a {
+    display: block;
+    color: #07066a;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul {
+    margin-right: 25px;
+}
+
+.menu li a:hover {
+    color:#ffa500;
+    transition: all .3s;
+}
+
+/* submenu */
+.submenu {
+    position: absolute;
+    background-color: #ffffff;
+    width: 150%;
+    display: none;
+    text-align: left;
+    z-index: 1;
+
+}
+
+.submenu li a {
+    display: block;
+    padding:15px;
+    color: #07066a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* section image */
+
+.section-main {
+    height: 400px;
+    display: block;
+    background-image: url(../images/fondodeg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1-main {
+    text-align: center;
+    top: 10%;
+}
+
+.div-main {
+    background-color: #ffffff;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    height: 65%;
+    border-radius: 10px;
+}
+
+.row1-main {
+    float: left;
+    width: 60%;
+}
+
+.row1-main p {
+    width: 75%;
+}
+
+.row2-main {
+    float: left;
+    width: 40%;
+}
+
+.row-icons {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+.row-icons:first-of-type {
+    margin-top: 15px;
+}
+.contacta-main {
+    width: 100%;
+    text-align: center;
+    float:left;
+}
+
+.section-main h2 {
+    margin:15px 30px;
+}
+
+.section-main p {
+    margin-left: 30px;
+}
+
+.btn-contact {
+    font-size: 1rem;
+    font-weight: 5;
+    padding: 3px 10px;
+    border:none;
+    border-radius: 5px;
+    background-color: #ffa500;
+    color:#ffffff;
+    margin: 20px 0px;
+}
+
+.btn-contact:hover {
+    background-color: #07066a;
+    transition: all .3s;
+}
+
+/* Section products main */
+
+.products-main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.products-div {
+    background-color: #ffffff;
+    padding: 10px;
+    border-color: #07066a;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 250px;
+    height: 75px;
+    margin: 10px 10px;
+}
+
+.small-img {
+    float: left;
+}
+
+.products-div a {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+}
+
+.products-div a:hover {
+    color:#ffa500;
+    transition: all .3s;
+}
+
+/* Section promocion */
+
+.promocion {
+    height: auto;
+    background-color:#ffffff;
+}
+
+.promocion h3 {
+    float:right;
+    margin: 5px 15%;
+    color: #ffa500;
+}
+
+.promocion h3:hover {
+    color:#07066a;
+    transition: all .3s;
+}
+
+.promocion h3:first-of-type {
+    float:left
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/mantel.png);
+}
+
+.card {
+    background-color: #ffffff;
+    width: 200px;
+    height: 250px;
+    border-color: #07066a;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin:10px;
+    padding-bottom: 10px;
+}
+
+.card ul li {
+    padding: 5px;
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.medium-img {
+    margin: 5px 35px;
+}
+
+.off {
+    position: absolute;
+    background-color: #ffa500;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 155px;
+    margin-top: -3px;
+}
+
+.off p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.card-info {
+    color: #808080;
+    font-size: 0.75rem;
+}
+
+.card-prix-promo span {
+    margin-right: 5px;
+}
+
+.card-prix-promo span:first-of-type {
+    color: #ffa500;
+    font-weight: 600;
+}
+
+.card-prix-promo span:nth-child(2) {
+    color: red;
+    text-decoration:line-through;
+
+}
+.card-prix-promo span:nth-child(3) {
+    color: #07066a;
+    font-size: 0.75rem;
+}
+.card-prix-promo span:nth-child(4) {
+    color: #07066a;
+    font-size: 0.75rem;
+}
+
+.card-prixud {
+    font-size: 0.75rem;
+    color: #07066a;
+
+}
+
+/* Seccion colaboradores */
+
+.collaboration {
+    background-color: #ffffff;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.prov-img {
+    margin-right: 10px;
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    background-color: #07066a;
+    text-align: left;
+    height: auto;
+    float: left;
+    padding: 25px;
+}
+
+.col-footer {
+    float: left;
+    width: 25%;
+    
+}
+
+.footer li a{
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color:#ffa500;
+    transition: all .3s;
+
+}
+
+.footer li {
+    padding: 5px;
+}
+
+.col-redes-icon {
+    width: 10%;
+    float:left;
+    text-align: right;
+}
+
+.col-redes-txt {
+    width: 90%;
+    float: left;
+}
+
+.col-redes-txt li {
+    margin-bottom: 8px;
+}
+
+.visa {
+    margin: 20px 0px 5px 0px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+/* PRODUCTS ENVASES */
+
+.products-div-products {
+    background-color: #ffffff;
+    padding: 10px;
+    border-color: #07066a;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 90%;
+    height: 75px;
+    margin: 10px 10px;
+}
+
+.products-div-products a {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+}
+
+.products-div-products a:hover {
+    color:#ffa500;
+    transition: all .3s;
+}
+
+.h1-envases {
+    text-align: center;
+    top: 10%;
+    background-color: #ffffff;
+    padding: 10px 0px 20px 0px;
+}
+
+.envases-main {
+    display: block;
+    float: left;
+}
+
+.envases-container {
+    background-image:url(../images/mantel.png);
+    height: auto;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.envases-container .card {
+    float:left;
+}
+
+.card-prix span {
+    margin-right: 5px;
+    color: #07066a;
+}
+
+.card-prix span:first-of-type {
+    font-weight: 600;
+}
+
+.card-prix span:nth-child(2) {
+    font-size: 0.75rem;
+}
+
+.card-prix span:nth-child(3) {
+    font-size: 0.75rem;
+}
+
+/* CONOCENOS */
+
+.row {
+    height: auto;
+}
+
+.row h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.row p {
+    margin: 20px 25% 20px 25%;
+}
+
+.col-txt {
+    float:left;
+    text-align: left;
+}
+
+.col-img {
+    float: left;
+    background-color: #ffffff;
+}
+
+.imgconocenos {
+margin-left: 25%;
+}
+
+.almacen {
+    background-image: url(../images/almacen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.prov-title {
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+.prov-title h2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.title-contact h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title-contact p {
+    margin-top: -15px;
+}
+
+form label {
+    margin-left: -2px;
+}
+
+.select {
+    padding: 3px;
+}
+
+/* MEDIAS FOR PHONE ADJUSTMENT */
+
+@media only screen and (max-width:768px) {
+    .nomobile {
+        display:none;
+    }
+
+    .products-main {
+        float: left;
+    }
+
+    .card {
+        float: left;
+        width: 175px;
+    }
+    .card-container {
+        display: inline-block;
+    }
+
+    .medium-img {
+        margin-left: 15px;
+    }
+
+    .h1-envases h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
